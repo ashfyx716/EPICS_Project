@@ -119,7 +119,7 @@ const About = () => {
                 <h3 className="text-xl font-bold mb-1">Ashfaq Sayeed</h3>
                 <p className="text-sm text-primary font-medium mb-3">Founder & Lead Developer</p>
                 <p className="text-sm text-muted-foreground">
-                  B.Tech CSE student at VIT Vellore, passionate about using technology for social impact and disaster management solutions
+                  2nd Year B.Tech CSE student at KLH Hyderabad, passionate about using technology for social impact and building disaster management solutions
                 </p>
               </div>
 
@@ -130,7 +130,7 @@ const About = () => {
                 <h3 className="text-xl font-bold mb-1">Mithun Prakash</h3>
                 <p className="text-sm text-secondary font-medium mb-3">Backend Developer</p>
                 <p className="text-sm text-muted-foreground">
-                  Computer Science student at BITS Pilani, specializing in database management and cloud architecture for emergency systems
+                  2nd Year B.Tech CSE student at KLH Hyderabad, specializing in database management and backend development for emergency response platforms
                 </p>
               </div>
 
@@ -141,7 +141,7 @@ const About = () => {
                 <h3 className="text-xl font-bold mb-1">Sai Shashank</h3>
                 <p className="text-sm text-accent font-medium mb-3">UI/UX Designer</p>
                 <p className="text-sm text-muted-foreground">
-                  Design student at NID Ahmedabad, focused on creating accessible and intuitive interfaces for educational platforms
+                  2nd Year B.Tech CSE student at KLH Hyderabad, focused on creating intuitive user interfaces and engaging designs for educational platforms
                 </p>
               </div>
 
@@ -152,7 +152,7 @@ const About = () => {
                 <h3 className="text-xl font-bold mb-1">Sampath Mohan</h3>
                 <p className="text-sm text-alert font-medium mb-3">Content Strategist</p>
                 <p className="text-sm text-muted-foreground">
-                  Mass Communication student at Symbiosis Pune, developing educational content and disaster awareness campaigns
+                  2nd Year B.Tech CSE student at KLH Hyderabad, developing educational content and creating awareness campaigns for disaster preparedness
                 </p>
               </div>
             </div>
