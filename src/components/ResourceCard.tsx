@@ -24,13 +24,23 @@ const ResourceCard = ({ icon, title, description, downloadUrl, externalUrl }: Re
         <p className="text-muted-foreground text-sm mb-4">{description}</p>
         <div className="flex gap-2">
           {downloadUrl && (
-            <Button variant="secondary" size="sm" className="flex-1">
+            <Button 
+              variant="secondary" 
+              size="sm" 
+              className="flex-1"
+              onClick={() => window.open(downloadUrl, '_blank')}
+            >
               <Download className="w-4 h-4 mr-1" />
               Download
             </Button>
           )}
           {externalUrl && (
-            <Button variant="outline" size="sm" className="flex-1">
+            <Button 
+              variant="outline" 
+              size="sm" 
+              className="flex-1"
+              onClick={() => window.open(externalUrl, '_blank')}
+            >
               <ExternalLink className="w-4 h-4 mr-1" />
               View
             </Button>
