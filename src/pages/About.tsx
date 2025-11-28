@@ -111,15 +111,15 @@ const About = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
               <div className="bg-card rounded-xl p-6 text-center border border-border hover:shadow-lg transition-all duration-300 animate-fade-up">
                 <div className="w-24 h-24 bg-gradient-to-br from-primary to-primary-glow rounded-full mx-auto mb-4 flex items-center justify-center text-white text-2xl font-bold">
-                  DR
+                  AS
                 </div>
-                <h3 className="text-xl font-bold mb-1">Dr. Rebecca Chen</h3>
-                <p className="text-sm text-primary font-medium mb-3">Founder & Director</p>
+                <h3 className="text-xl font-bold mb-1">Ashfaq Sayeed</h3>
+                <p className="text-sm text-primary font-medium mb-3">Founder & Lead Developer</p>
                 <p className="text-sm text-muted-foreground">
-                  15+ years in emergency management and education safety consulting
+                  B.Tech CSE student at VIT Vellore, passionate about using technology for social impact and disaster management solutions
                 </p>
               </div>
 
@@ -127,21 +127,32 @@ const About = () => {
                 <div className="w-24 h-24 bg-gradient-to-br from-secondary to-secondary-glow rounded-full mx-auto mb-4 flex items-center justify-center text-white text-2xl font-bold">
                   MP
                 </div>
-                <h3 className="text-xl font-bold mb-1">Marcus Patterson</h3>
-                <p className="text-sm text-secondary font-medium mb-3">Chief Safety Officer</p>
+                <h3 className="text-xl font-bold mb-1">Mithun Prakash</h3>
+                <p className="text-sm text-secondary font-medium mb-3">Backend Developer</p>
                 <p className="text-sm text-muted-foreground">
-                  Former firefighter with expertise in disaster response training
+                  Computer Science student at BITS Pilani, specializing in database management and cloud architecture for emergency systems
                 </p>
               </div>
 
               <div className="bg-card rounded-xl p-6 text-center border border-border hover:shadow-lg transition-all duration-300 animate-fade-up">
                 <div className="w-24 h-24 bg-gradient-to-br from-accent to-accent-glow rounded-full mx-auto mb-4 flex items-center justify-center text-white text-2xl font-bold">
-                  LW
+                  SS
                 </div>
-                <h3 className="text-xl font-bold mb-1">Lisa Wong</h3>
-                <p className="text-sm text-accent font-medium mb-3">Education Coordinator</p>
+                <h3 className="text-xl font-bold mb-1">Sai Shashank</h3>
+                <p className="text-sm text-accent font-medium mb-3">UI/UX Designer</p>
                 <p className="text-sm text-muted-foreground">
-                  Curriculum developer specializing in safety education programs
+                  Design student at NID Ahmedabad, focused on creating accessible and intuitive interfaces for educational platforms
+                </p>
+              </div>
+
+              <div className="bg-card rounded-xl p-6 text-center border border-border hover:shadow-lg transition-all duration-300 animate-fade-up">
+                <div className="w-24 h-24 bg-gradient-to-br from-alert to-alert-glow rounded-full mx-auto mb-4 flex items-center justify-center text-white text-2xl font-bold">
+                  SM
+                </div>
+                <h3 className="text-xl font-bold mb-1">Sampath Mohan</h3>
+                <p className="text-sm text-alert font-medium mb-3">Content Strategist</p>
+                <p className="text-sm text-muted-foreground">
+                  Mass Communication student at Symbiosis Pune, developing educational content and disaster awareness campaigns
                 </p>
               </div>
             </div>
