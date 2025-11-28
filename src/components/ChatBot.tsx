@@ -171,7 +171,7 @@ const ChatBot = () => {
                       : 'bg-muted text-foreground'
                   }`}
                 >
-                  <p className="text-sm whitespace-pre-wrap">{msg.content}</p>
+                  <p className="text-sm whitespace-pre-wrap">{msg.content.replace(/\*\*/g, '')}</p>
                 </div>
               </div>
             ))}

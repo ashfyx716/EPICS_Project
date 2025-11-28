@@ -49,13 +49,13 @@ const Contact = () => {
                     <div className="grid md:grid-cols-2 gap-6">
                       <div>
                         <h3 className="font-semibold text-alert mb-2">🚨 Emergency Services</h3>
-                        <p className="text-3xl font-bold text-alert mb-1">911</p>
-                        <p className="text-sm text-muted-foreground">For life-threatening emergencies</p>
+                        <p className="text-3xl font-bold text-alert mb-1">112</p>
+                        <p className="text-sm text-muted-foreground">National Emergency Number</p>
                       </div>
                       <div>
-                        <h3 className="font-semibold mb-2">📞 Non-Emergency Hotline</h3>
-                        <p className="text-2xl font-bold mb-1">(555) 123-4567</p>
-                        <p className="text-sm text-muted-foreground">24/7 Safety Support Line</p>
+                        <h3 className="font-semibold mb-2">📞 Police / Fire / Ambulance</h3>
+                        <p className="text-2xl font-bold mb-1">100 / 101 / 102</p>
+                        <p className="text-sm text-muted-foreground">24/7 Emergency Helplines</p>
                       </div>
                     </div>
                   </div>
@@ -86,8 +86,8 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold mb-1">Phone</h3>
-                      <p className="text-muted-foreground">(555) 987-6543</p>
-                      <p className="text-sm text-muted-foreground">Mon-Fri, 8:00 AM - 6:00 PM</p>
+                      <p className="text-muted-foreground">+91-11-2345-6789</p>
+                      <p className="text-sm text-muted-foreground">Mon-Fri, 9:00 AM - 6:00 PM IST</p>
                     </div>
                   </div>
 
@@ -97,7 +97,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold mb-1">Email</h3>
-                      <p className="text-muted-foreground">support@disasterready.edu</p>
+                      <p className="text-muted-foreground">help@disasterready.in</p>
                       <p className="text-sm text-muted-foreground">We'll respond within 24 hours</p>
                     </div>
                   </div>
@@ -109,9 +109,9 @@ const Contact = () => {
                     <div>
                       <h3 className="font-semibold mb-1">Address</h3>
                       <p className="text-muted-foreground">
-                        123 Safety Education Center<br />
-                        Preparedness Ave, Suite 500<br />
-                        Safety City, SC 12345
+                        National Disaster Management Center<br />
+                        Block-4, Sector 18, Dwarka<br />
+                        New Delhi - 110075, India
                       </p>
                     </div>
                   </div>
@@ -123,8 +123,8 @@ const Contact = () => {
                     <div>
                       <h3 className="font-semibold mb-1">Office Hours</h3>
                       <p className="text-muted-foreground">
-                        Monday - Friday: 8:00 AM - 6:00 PM<br />
-                        Saturday: 9:00 AM - 2:00 PM<br />
+                        Monday - Friday: 9:00 AM - 6:00 PM IST<br />
+                        Saturday: 10:00 AM - 3:00 PM IST<br />
                         Sunday: Closed
                       </p>
                     </div>
@@ -175,7 +175,7 @@ const Contact = () => {
 
                   <div>
                     <Label htmlFor="contact-phone">Phone Number</Label>
-                    <Input id="contact-phone" type="tel" placeholder="(555) 123-4567" className="mt-1" />
+                    <Input id="contact-phone" type="tel" placeholder="+91-98765-43210" className="mt-1" />
                   </div>
 
                   <div>
@@ -209,34 +209,34 @@ const Contact = () => {
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="bg-card rounded-xl p-6 border border-border text-center">
                   <MapPin className="w-8 h-8 text-primary mx-auto mb-3" />
-                  <h3 className="font-bold mb-2">Northeast Region</h3>
+                  <h3 className="font-bold mb-2">North India Region</h3>
                   <p className="text-sm text-muted-foreground mb-2">
-                    Boston, MA
+                    New Delhi
                   </p>
                   <p className="text-sm text-muted-foreground">
-                    (555) 100-0001
+                    +91-11-2345-0001
                   </p>
                 </div>
 
                 <div className="bg-card rounded-xl p-6 border border-border text-center">
                   <MapPin className="w-8 h-8 text-secondary mx-auto mb-3" />
-                  <h3 className="font-bold mb-2">West Coast Region</h3>
+                  <h3 className="font-bold mb-2">South India Region</h3>
                   <p className="text-sm text-muted-foreground mb-2">
-                    San Francisco, CA
+                    Bangalore, Karnataka
                   </p>
                   <p className="text-sm text-muted-foreground">
-                    (555) 200-0002
+                    +91-80-2345-0002
                   </p>
                 </div>
 
                 <div className="bg-card rounded-xl p-6 border border-border text-center">
                   <MapPin className="w-8 h-8 text-accent mx-auto mb-3" />
-                  <h3 className="font-bold mb-2">Southern Region</h3>
+                  <h3 className="font-bold mb-2">West India Region</h3>
                   <p className="text-sm text-muted-foreground mb-2">
-                    Houston, TX
+                    Mumbai, Maharashtra
                   </p>
                   <p className="text-sm text-muted-foreground">
-                    (555) 300-0003
+                    +91-22-2345-0003
                   </p>
                 </div>
               </div>
