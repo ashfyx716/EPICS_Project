@@ -50,7 +50,7 @@ const Auth = () => {
     setLoading(true);
 
     try {
-      const { error } = await supabase.auth.signUp({
+      const { data, error } = await supabase.auth.signUp({
         email,
         password,
         options: {
@@ -62,6 +62,13 @@ const Auth = () => {
       });
 
       if (error) throw error;
+
+      // If admin email, assign admin role
+      if (email === 'admin@gmail.com' && data.user) {
+        await supabase
+          .from('user_roles')
+          .insert({ user_id: data.user.id, role: 'admin' });
+      }
 
       toast({
         title: "Success",
