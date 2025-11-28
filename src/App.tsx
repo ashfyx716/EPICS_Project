@@ -11,6 +11,7 @@ import Alerts from "./pages/Alerts";
 import GetInvolved from "./pages/GetInvolved";
 import Contact from "./pages/Contact";
 import AdminResources from "./pages/AdminResources";
+import AdminSiteImages from "./pages/AdminSiteImages";
 import Auth from "./pages/Auth";
 import NotFound from "./pages/NotFound";
 import ChatBot from "./components/ChatBot";
@@ -33,6 +34,7 @@ const App = () => (
           <Route path="/contact" element={<Contact />} />
           <Route path="/auth" element={<Auth />} />
           <Route path="/admin/resources" element={<AdminResources />} />
+          <Route path="/admin/site-images" element={<AdminSiteImages />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

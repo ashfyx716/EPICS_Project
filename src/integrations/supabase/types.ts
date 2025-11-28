@@ -234,6 +234,39 @@ export type Database = {
         }
         Relationships: []
       }
+      site_images: {
+        Row: {
+          alt_text: string | null
+          created_at: string | null
+          created_by: string | null
+          id: string
+          image_type: string
+          image_url: string
+          is_active: boolean | null
+          updated_at: string | null
+        }
+        Insert: {
+          alt_text?: string | null
+          created_at?: string | null
+          created_by?: string | null
+          id?: string
+          image_type: string
+          image_url: string
+          is_active?: boolean | null
+          updated_at?: string | null
+        }
+        Update: {
+          alt_text?: string | null
+          created_at?: string | null
+          created_by?: string | null
+          id?: string
+          image_type?: string
+          image_url?: string
+          is_active?: boolean | null
+          updated_at?: string | null
+        }
+        Relationships: []
+      }
       user_progress: {
         Row: {
           completed: boolean | null

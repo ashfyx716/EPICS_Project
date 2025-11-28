@@ -1,9 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Shield, BookOpen, Users } from "lucide-react";
-import heroImage from "@/assets/hero-disaster-ready.jpg";
+import { useSiteImage } from "@/hooks/useSiteImages";
+import heroImageFallback from "@/assets/hero-disaster-ready.jpg";
 
 const Hero = () => {
+  const { data: heroImage } = useSiteImage("hero");
+  
   return (
     <section className="relative overflow-hidden">
       {/* Background with Gradient Overlay */}
@@ -67,8 +70,8 @@ const Hero = () => {
           <div className="relative animate-fade-in">
             <div className="aspect-video rounded-2xl overflow-hidden shadow-2xl border-4 border-border">
               <img
-                src={heroImage}
-                alt="Emergency first aid kit and disaster preparedness supplies"
+                src={heroImage?.image_url || heroImageFallback}
+                alt={heroImage?.alt_text || "Emergency first aid kit and disaster preparedness supplies"}
                 className="w-full h-full object-cover"
               />
             </div>
