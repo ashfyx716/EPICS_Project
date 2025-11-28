@@ -133,22 +133,22 @@ const GetInvolved = () => {
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
                       <Label htmlFor="firstName">First Name</Label>
-                      <Input id="firstName" placeholder="John" className="mt-1" />
+                      <Input id="firstName" placeholder="Enter first name" className="mt-1" />
                     </div>
                     <div>
                       <Label htmlFor="lastName">Last Name</Label>
-                      <Input id="lastName" placeholder="Doe" className="mt-1" />
+                      <Input id="lastName" placeholder="Enter last name" className="mt-1" />
                     </div>
                   </div>
 
                   <div>
                     <Label htmlFor="email">Email Address</Label>
-                    <Input id="email" type="email" placeholder="john.doe@example.com" className="mt-1" />
+                    <Input id="email" type="email" placeholder="your.email@example.com" className="mt-1" />
                   </div>
 
                   <div>
                     <Label htmlFor="phone">Phone Number</Label>
-                    <Input id="phone" type="tel" placeholder="(555) 123-4567" className="mt-1" />
+                    <Input id="phone" type="tel" placeholder="+91 XXXXX XXXXX" className="mt-1" />
                   </div>
 
                   <div>
