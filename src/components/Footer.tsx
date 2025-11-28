@@ -82,17 +82,17 @@ const Footer = () => {
               <li className="flex items-start gap-2 text-muted-foreground">
                 <Phone className="w-4 h-4 mt-0.5 text-alert flex-shrink-0" />
                 <div>
-                  <div className="font-semibold text-alert">911</div>
+                  <div className="font-semibold text-alert">112</div>
                   <div>Emergency Services</div>
                 </div>
               </li>
               <li className="flex items-start gap-2 text-muted-foreground">
                 <Mail className="w-4 h-4 mt-0.5 text-primary flex-shrink-0" />
-                <div>support@disasterready.edu</div>
+                <div>help@disasterready.in</div>
               </li>
               <li className="flex items-start gap-2 text-muted-foreground">
                 <MapPin className="w-4 h-4 mt-0.5 text-secondary flex-shrink-0" />
-                <div>Safety Education Center</div>
+                <div>New Delhi, India</div>
               </li>
             </ul>
           </div>
