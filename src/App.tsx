@@ -11,7 +11,9 @@ import Alerts from "./pages/Alerts";
 import GetInvolved from "./pages/GetInvolved";
 import Contact from "./pages/Contact";
 import AdminResources from "./pages/AdminResources";
+import Auth from "./pages/Auth";
 import NotFound from "./pages/NotFound";
+import ChatBot from "./components/ChatBot";
 
 const queryClient = new QueryClient();
 
@@ -29,10 +31,12 @@ const App = () => (
           <Route path="/alerts" element={<Alerts />} />
           <Route path="/get-involved" element={<GetInvolved />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/auth" element={<Auth />} />
           <Route path="/admin/resources" element={<AdminResources />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <ChatBot />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
