@@ -63,13 +63,6 @@ const Auth = () => {
 
       if (error) throw error;
 
-      // If admin email, assign admin role
-      if (email === 'admin@gmail.com' && data.user) {
-        await supabase
-          .from('user_roles')
-          .insert({ user_id: data.user.id, role: 'admin' });
-      }
-
       toast({
         title: "Success",
         description: "Account created! Please check your email to verify.",
