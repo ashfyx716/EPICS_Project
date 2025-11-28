@@ -6,12 +6,19 @@ import DisasterCard from "@/components/DisasterCard";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { CheckCircle2, AlertTriangle, Users, BookOpen } from "lucide-react";
-import earthquakeIcon from "@/assets/icon-earthquake.jpg";
-import floodIcon from "@/assets/icon-flood.jpg";
-import fireIcon from "@/assets/icon-fire.jpg";
-import pandemicIcon from "@/assets/icon-pandemic.jpg";
+import { useSiteImages } from "@/hooks/useSiteImages";
+import earthquakeIconFallback from "@/assets/icon-earthquake.jpg";
+import floodIconFallback from "@/assets/icon-flood.jpg";
+import fireIconFallback from "@/assets/icon-fire.jpg";
+import pandemicIconFallback from "@/assets/icon-pandemic.jpg";
 
 const Home = () => {
+  const { data: siteImages } = useSiteImages();
+  
+  const getImageUrl = (type: string, fallback: string) => {
+    return siteImages?.find(img => img.image_type === type)?.image_url || fallback;
+  };
+  
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Navbar />
@@ -48,25 +55,25 @@ const Home = () => {
               <DisasterCard
                 title="Earthquakes"
                 description="Learn how to prepare, protect yourself during shaking, and respond safely after an earthquake."
-                image={earthquakeIcon}
+                image={getImageUrl("earthquake_icon", earthquakeIconFallback)}
                 color="primary"
               />
               <DisasterCard
                 title="Floods"
                 description="Understand flood risks, evacuation procedures, and water safety measures for your institution."
-                image={floodIcon}
+                image={getImageUrl("flood_icon", floodIconFallback)}
                 color="secondary"
               />
               <DisasterCard
                 title="Fire Safety"
                 description="Master fire prevention, evacuation plans, and emergency response protocols for your campus."
-                image={fireIcon}
+                image={getImageUrl("fire_icon", fireIconFallback)}
                 color="alert"
               />
               <DisasterCard
                 title="Pandemics"
                 description="Prepare for health emergencies with hygiene protocols, social distancing, and safety measures."
-                image={pandemicIcon}
+                image={getImageUrl("pandemic_icon", pandemicIconFallback)}
                 color="accent"
               />
             </div>
