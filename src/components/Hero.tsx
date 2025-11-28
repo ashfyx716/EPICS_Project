@@ -68,7 +68,7 @@ const Hero = () => {
             <div className="aspect-video rounded-2xl overflow-hidden shadow-2xl border-4 border-border">
               <img
                 src={heroImage}
-                alt="Students and teachers learning disaster preparedness"
+                alt="Emergency preparedness supplies and disaster safety equipment"
                 className="w-full h-full object-cover"
               />
             </div>
